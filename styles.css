@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+header{
+    height: 180px;
+    /* border: 3px solid yellow; */
+    max-width: 720px;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width:80%;
+    margin:0 auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+#title{
+    font-weight:500;
+    font-size: 2rem;
+    margin:0.75rem;
+}
+#description{
+    font-size: 1.25rem;
+    font-weight: none;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    background: rgba(27,27,50,0.8);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+
+    margin: 0 auto;
+}
+
+#survey-form{
+    /* border: 3px solid yellow; */
+    max-width: 720px;;
+    width:80%;
+    margin:0 auto;
+    background: rgba(27,27,50,0.8);
+    padding:40px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+
+}
+fieldset{
+    border:none;
+}
+.form-item{
+    margin:20px 0;
+}
+
+label{
+    display: block;
+    margin-bottom:10px;
+    
+}
+
+input#name,
+input#email,
+input#number,
+select{
+    width:100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius:5px;
+    border:none;
+
+}
+
+.recommend label,
+.improvement label{
+    display: flex;
+    gap: 20px;
+
+}
+
+.textarea{width: 100%;
+height:150px;
+padding:10px;
+}
+
+#submit{
+    width:100%;
+    padding:10px;
+    background-color: #37af65;
+    color:white;
+    border:none;
+}
